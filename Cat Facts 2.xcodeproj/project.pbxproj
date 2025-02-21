@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A0E3ECF2D68016700859DE9 /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = 1A0E3ECE2D68016700859DE9 /* Shared */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1A0E3EB12D6800B500859DE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0E3ECF2D68016700859DE9 /* Shared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "Cat Facts 2";
 			packageProductDependencies = (
+				1A0E3ECE2D68016700859DE9 /* Shared */,
 			);
 			productName = "Cat Facts 2";
 			productReference = 1A0E3EA02D6800B400859DE9 /* Cat Facts 2.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 1A0E3E972D6800B400859DE9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A0E3ECD2D68016700859DE9 /* XCRemoteSwiftPackageReference "CatFacts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A0E3EA12D6800B400859DE9 /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A0E3ECD2D68016700859DE9 /* XCRemoteSwiftPackageReference "CatFacts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PaulKlauser/CatFacts";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A0E3ECE2D68016700859DE9 /* Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A0E3ECD2D68016700859DE9 /* XCRemoteSwiftPackageReference "CatFacts" */;
+			productName = Shared;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A0E3E982D6800B400859DE9 /* Project object */;
 }

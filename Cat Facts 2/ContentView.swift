@@ -6,16 +6,28 @@
 //
 
 import SwiftUI
+import Shared
 
 struct ContentView: View {
+    let viewModel = SharedViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Observing(viewModel.uiState) { state in
+            VStack {
+                switch onEnum(of: state) {
+                case .initial:
+                    Text("Tap Button")
+                case .loading:
+                    Text("Loading...")
+                case .success(let success):
+                    Text(success.catFact)
+                }
+                
+                Button("Fetch") {
+                    viewModel.fetchCatFact()
+                }
+            }
         }
-        .padding()
     }
 }
 
