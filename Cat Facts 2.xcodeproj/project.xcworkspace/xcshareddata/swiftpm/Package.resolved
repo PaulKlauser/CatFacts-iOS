@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/PaulKlauser/CatFacts",
       "state" : {
-        "revision" : "9d4acc4336d668ad523c6d68f31c9c4feb6c297b",
-        "version" : "0.1.0"
+        "revision" : "921f3a74966222ecf08d5a5cfb4f9dc387020147",
+        "version" : "0.2.0"
       }
     }
   ],
